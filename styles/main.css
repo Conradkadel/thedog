@@ -2,12 +2,22 @@
 * {
     box-sizing: border-box;
 }
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+}
+
 html {    
     background-color: aqua;
 }
+p {    
+    text-align: center;
+}
 
 body {
-
+    clear: both;
     height: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     max-width: 1000px;
